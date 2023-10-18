@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate from cyrillic to latin</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>translate from cyrillic to latin</h1>
+        <form action="/result" method="post">
+            <textarea name="input_text" rows="5" placeholder="type text in cyrillic"></textarea>
+            <button type="submit">translate</button>
+        </form>
+        {% if translated_text %}
+        <h2>result:</h2>
+        <div class="result">{{ translated_text }}</div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
