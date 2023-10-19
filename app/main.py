@@ -24,6 +24,11 @@ async def http_not_found_handler(request, __):
 async def http_method_not_allowed_handler(request, __):
     return templates.TemplateResponse("error.html", {"request": request, "status_code": 405})
 
+@app.exception_handler(500)
+async def http_method_not_allowed_handler(request, __):
+    return templates.TemplateResponse("error.html", {"request": request, "status_code": 500})
+
+
 
 @app.get("/")
 def root(request: Request):
