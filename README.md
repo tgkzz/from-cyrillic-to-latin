@@ -9,7 +9,7 @@ from-cyrillic-to-latin is a web application that translates Cyrillic input into 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/tgkzz/from-cyrillic-to-latin.git
 ```
 
 Go to the project directory
